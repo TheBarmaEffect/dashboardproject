@@ -1,0 +1,82 @@
+
+# Wind Farm Dashboard Project Report
+
+## Introduction
+
+The Wind Farm Dashboard project aimed to create an interactive web application for visualizing and analyzing wind turbine operational data. The dashboard was designed to provide insights into various metrics such as quarterly summaries, turbine coordinates, yearly production changes, and more.
+
+## Initial Steps
+
+### Understanding the Requirements
+
+1. **Examining Jupyter Files and CSV Data**:
+   - The project began by reviewing the provided Jupyter notebooks and understanding the structure and content of the `T1.csv` file. This file contained detailed information on wind turbine operations, including timestamps and power output.
+
+2. **Analyzing Mockup Slides**:
+   - The mockup slides clearly visualise the desired dashboard layout and functionality. They highlighted the key metrics to be displayed and the overall user interface design.
+
+## Development Process
+
+### Building the Dashboard
+
+1. **Initial Approach: Building from Scratch**:
+   - Initially, I attempted to build the dashboard from scratch. This involved setting up a basic web application using Python, Pandas for data processing, and H2O Wave for the user interface.
+
+2. **Challenges and Pivot**:
+   - Building from scratch proved time-consuming and complex, with multiple challenges in rendering charts and integrating various components. Realizing the inefficiency of this approach, I decided to pivot towards using predefined templates.
+
+### Using Predefined Templates
+
+1. **Adapting Predefined Templates**:
+   - I selected and modified a suitable predefined template to fit the project requirements. This included customizing the layout, integrating data processing scripts, and configuring the user interface elements to match the mockup slides.
+
+2. **Achievements**:
+   - Successfully created a functional dashboard layout.
+   - Integrated navigation menus, summary cards, and placeholders for charts.
+
+### Rendering Charts
+
+1. **Challenges in Chart Rendering**:
+   - Despite setting up the dashboard and integrating the data, rendering the charts in the foreground remained problematic. Various methods were attempted, including:
+     - **HTML Rendering**: Attempted to render charts as HTML elements.
+     - **PNG Files**: Tried converting charts to PNG images and displaying them.
+     - **Plotly Dash**: Integrated Plotly Dash for interactive charts.
+     - **Matplotlib**: Used Matplotlib for static chart rendering.
+
+2. **Outcome**:
+   - Although charts were successfully generated in the backend, they did not display correctly on the dashboard. This issue persisted across different chart-rendering libraries and approaches.
+
+### Integrating LLM for Automation
+
+1. **Using OpenAI's ChatGPT API**:
+   - To streamline the process and assist data scientists, I attempted to integrate the ChatGPT API for generating code snippets and automating tasks.
+
+2. **Challenges**:
+   - The API responses included text and code, which required additional parsing and cleanup.
+   - Generated code did not always align with the project requirements, necessitating manual adjustments and debugging.
+
+## Conclusion
+
+### Summary of Achievements
+
+- Successfully loaded and processed wind turbine data.
+- Designed and implemented a functional dashboard layout using H2O Wave.
+- Integrated navigation menus and summary statistic cards.
+
+### Challenges Faced
+
+- Persistent issues with rendering charts on the dashboard.
+- Integration of various charting libraries did not yield the desired visual output.
+- Limitations of the ChatGPT API in generating precise and usable code for the dashboard.
+
+### Final Thoughts
+
+Despite the challenges, the project resulted in a partially functional dashboard that meets the initial design requirements. However, the inability to render charts on the dashboard foreground remains a significant limitation. Given more time, exploring other dashboard frameworks such as Grafana could provide a more robust solution.
+
+
+
+### Next Steps
+
+- Explore alternative dashboard frameworks such as Grafana for better chart rendering capabilities.
+- Allocate more time for thorough testing and debugging of chart integration.
+- Consider further automation tools and APIs for improved efficiency in data visualization tasks.
